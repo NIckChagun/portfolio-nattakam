@@ -870,7 +870,7 @@ a {
   left: 50%;
   top: 38px;
   width: 0;
-  height: 250px;
+  height: 240px;
   border-left: 2px dashed #2b5a89;
   transform: translateX(-50%);
 }
@@ -1014,8 +1014,15 @@ a {
   font-weight: 800;
 }
 
+.social-links .iconify {
+  width: 18px;
+  height: 18px;
+  font-size: 16px !important;
+  color: #23c36b;
+}
+
 .whatsapp {
-  background: #23c36b;
+  background: #FFF;
 }
 
 .linkedin {
