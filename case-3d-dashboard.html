@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Security Monitoring Dashboard | Nattakan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Nattakan portfolio home">
+      <span class="brand-mark">N</span>
+      <span>Nattakan</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#home">Home</a>
+      <a class="active" href="index.html#case-studies">Case Studies</a>
+      <a href="index.html#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="detail-main">
+    <article class="detail-hero">
+      <div class="detail-shell">
+        <h1>3D Security Monitoring Dashboard</h1>
+        <p class="detail-lead">ออกแบบ UX/UI สำหรับ Dashboard ในระบบ Smart Building เพื่อใช้ monitor ข้อมูลของอาคาร เช่น กล้องวงจรปิด, การเข้าออก, และที่จอดรถ แบบ real-time โดยพัฒนาต่อยอดจากระบบ back office ด้านความปลอดภัยที่มีอยู่ เพื่อยกระดับการแสดงผลข้อมูลจากรูปแบบเดิมให้ง่ายต่อการสแกนผ่านมุมมองเชิงพื้นที่ (3D)</p>
+
+        <img class="detail-image" src="assets/images/3d_dashboard.png" alt="3D Security Monitoring Dashboard main interface">
+
+        <section class="detail-section">
+          <h2>Research</h2>
+          <p>ผู้ใช้งานต้อง monitor หลายระบบพร้อมกัน เช่น CCTV, Access Control และ Parking ข้อมูลส่วนใหญ่ถูกแสดงในรูปแบบ table / list ทำให้ต้องใช้เวลาในการตีความ การเชื่อมโยงข้อมูลกับตำแหน่งจริงของอาคารต้องอาศัยประสบการณ์ของผู้ใช้งาน การสลับหน้าจอหลายระบบทำให้ workflow ไม่ต่อเนื่อง</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Key Insight</h2>
+          <p>ผู้ใช้งานไม่ได้ต้องการแค่ข้อมูล แต่ต้องการเข้าใจสถานการณ์โดยรวมอย่างรวดเร็ว การแสดงผลแบบ 2D ไม่สามารถสื่อความสัมพันธ์ของข้อมูลกับสถานที่ได้ดีพอ หากข้อมูลถูกผูกกับพื้นที่จะช่วยลดความซับซ้อนในการติดตาม</p>
+        </section>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Problem</h2>
+            <ul>
+              <li>ข้อมูลอยู่ในรูปแบบ table / list ทำให้เข้าใจภาพรวมยาก</li>
+              <li>ผู้ใช้งานต้องเชื่อมโยงข้อมูลกับ location เอง</li>
+              <li>ไม่เหมาะกับการ monitor หลายระบบพร้อมกัน</li>
+              <li>Dashboard แบบเดิมไม่สามารถสะท้อนสถานะของพื้นที่แบบ real-time ได้อย่างชัดเจน</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Solution</h2>
+            <ul>
+              <li>ออกแบบเป็น 3D Monitoring Dashboard ที่ใช้ตัวอาคารเป็นตัวแทนของข้อมูล</li>
+              <li>แสดงภาพรวมของทั้งพื้นที่ในมุมมองเดียว</li>
+              <li>ให้ผู้ใช้เลือกอาคารเพื่อดูข้อมูลแบบเจาะลึก</li>
+              <li>รวมข้อมูลจากหลายระบบไว้ใน interface เดียว</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="detail-crop crop-dashboard-secondary" role="img" aria-label="Dashboard detail screen with visitor graph and building panels"></div>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Key Features</h2>
+            <ul>
+              <li>ออกแบบเป็น 3D Monitoring Dashboard ที่ใช้ตัวอาคารเป็นตัวแทนของข้อมูล</li>
+              <li>แสดงภาพรวมของทั้งพื้นที่ในมุมมองเดียว</li>
+              <li>ให้ผู้ใช้เลือกอาคารเพื่อดูข้อมูลแบบเจาะลึก</li>
+              <li>รวมข้อมูลจากหลายระบบไว้ใน interface เดียว</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Result</h2>
+            <ul>
+              <li>ช่วยให้ผู้ใช้งานเข้าใจสถานะของระบบได้รวดเร็วขึ้น</li>
+              <li>ทำให้การ monitor ระบบความปลอดภัยมีประสิทธิภาพมากขึ้น</li>
+              <li>เพิ่มประสบการณ์การใช้งานจากระบบเดิมที่เป็น back office</li>
+              <li>ยกระดับประสบการณ์ของระบบให้มีความทันสมัยและเข้าใจง่ายมากขึ้น</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="detail-section">
+          <h2>Reflection</h2>
+          <p>โปรเจกต์นี้สะท้อนความสามารถของฉันในการยกระดับระบบเดิมที่มีข้อมูลซับซ้อน ให้กลายเป็นประสบการณ์ที่เข้าใจง่าย ใช้งานได้จริง และมีความทันสมัยมากขึ้น ได้ฝึกการคิดเชิงระบบ รวมถึงการออกแบบประสบการณ์ที่ช่วยเชื่อมโยงข้อมูลกับพื้นที่จริง ผ่านการใช้ 3D visualization เพื่อให้ผู้ใช้งานสามารถ monitor และเข้าถึงข้อมูลได้ง่ายขึ้น</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-grid">
+      <section class="footer-intro">
+        <a class="brand" href="index.html#home">
+          <span class="brand-mark">N</span>
+          <span>Nattakan</span>
+        </a>
+        <h2>Have A Project In Mind?<br>Let’s Talk.</h2>
+        <p>I’m open to new opportunities and collaborations - feel free to reach out and let’s build something meaningful together.</p>
+        <div class="social-links" aria-label="Social links">
+          <a class="whatsapp" href="tel:+66940481475" aria-label="Call Nattakan">☎</a>
+          <a class="linkedin" href="https://www.linkedin.com" aria-label="LinkedIn">in</a>
+          <a class="mail" href="mailto:nattakan.uoo@gmail.com" aria-label="Email">m</a>
+        </div>
+      </section>
+      <section>
+        <h3>Navigation</h3>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+      </section>
+      <section>
+        <h3>Our address</h3>
+        <p><a href="tel:+66940481475">+66 94 048 1475</a></p>
+        <p><a href="mailto:nattakan.uoo@gmail.com">nattakan.uoo@gmail.com</a></p>
+        <address>97/166 S9 Condominium<br>Soi Pa Mai Uthit, Rattanathibet Road<br>Bang Rak Yai Subdistrict, Bang Bua Thong District<br>Nonthaburi 11110, Thailand</address>
+      </section>
+    </div>
+    <p class="copyright">Copyright 2026 Nattakan Noichalad. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

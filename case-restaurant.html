@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu Management System | Nattakan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Nattakan portfolio home">
+      <span class="brand-mark">N</span>
+      <span>Nattakan</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#home">Home</a>
+      <a class="active" href="index.html#case-studies">Case Studies</a>
+      <a href="index.html#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="detail-main">
+    <article class="detail-hero">
+      <div class="detail-shell">
+        <h1>Restaurant Menu Management System</h1>
+        <p class="detail-lead">Restaurant Menu Management System เป็นระบบหลังบ้านสำหรับร้านอาหารที่ใช้จัดการหมวดหมู่และเมนูอาหารบนหน้าแสดงผลของร้าน โดยออกแบบเพื่อช่วยให้พนักงานสามารถเพิ่ม แก้ไข จัดลำดับ และจัดการเมนูจำนวนมากได้อย่างรวดเร็วและเป็นระบบ โปรเจกต์นี้มุ่งเน้นการออกแบบ UX/UI สำหรับระบบที่มีข้อมูลจำนวนมาก พร้อมปรับปรุง workflow การทำงานให้ใช้งานง่าย ลดความซับซ้อน และช่วยให้เข้าถึงเมนูได้เร็วขึ้น</p>
+
+        <div class="detail-crop crop-restaurant-hero" role="img" aria-label="Restaurant menu management dashboard screens"></div>
+
+        <section class="detail-section">
+          <h2>Research</h2>
+          <p>จากการวิเคราะห์ลักษณะการใช้งานของระบบ พบว่าผู้ใช้งานหลักคือพนักงานและผู้ดูแลระบบ ซึ่งต้องจัดการเมนูจำนวนมากในแต่ละวัน กิจกรรมที่เกิดบ่อยคือการเพิ่มเมนูใหม่ แก้ไขข้อมูล และจัดลำดับการแสดงผล ปัญหาหลักคือเมนูมีหมวดหมู่จำนวนมาก ทำให้ต้อง scroll ยาว การค้นหาเมนูทำได้ยากเมื่อข้อมูลเพิ่มขึ้น การจัดลำดับเมนูและหมวดหมู่ใช้เวลานาน การสื่อสารระหว่างการจัดการข้อมูลยังไม่ต่อเนื่องพอ จึงเริ่มต้นออกแบบโดยโฟกัสที่การจัด Information Architecture และลดขั้นตอนในการทำงานของผู้ใช้งาน</p>
+        </section>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Key Insight</h2>
+            <p>ผู้ใช้งานไม่ได้ต้องการ “เพิ่มทุกอย่าง” พร้อมกัน แต่ต้องการเครื่องมือที่ต้องจัดการได้เร็วที่สุด การลดเวลาในการค้นหาและลดจำนวนการ scroll ส่งผลต่อประสิทธิภาพในการทำงานมากกว่าการเพิ่มฟีเจอร์จำนวนมากในหน้าเดียว</p>
+          </section>
+          <section>
+            <h2>Problem</h2>
+            <p>ระบบเดิมมีรายการหมวดหมู่และเมนูจำนวนมาก ทำให้ผู้ใช้งานต้อง scroll เป็นระยะทางยาวเพื่อค้นหาเมนูที่ต้องการจัดการ ส่งผลให้ workflow มีความซับซ้อนและใช้เวลานาน นอกจากนี้การจัดการเมนูหลายรูปแบบ เช่น การเปิด/ปิดการขาย การแก้ไขข้อมูล หรือการจัดลำดับ ยังต้องสลับหลายขั้นตอน ทำให้การใช้งานไม่ต่อเนื่อง</p>
+          </section>
+        </div>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Solution</h2>
+            <ul>
+              <li>ลดการ scroll ด้วยระบบ Category Navigation</li>
+              <li>เพิ่ม Search เพื่อเข้าถึงเมนูได้เร็วขึ้น</li>
+              <li>รองรับทั้ง Grid View และ List View ตามลักษณะการใช้งาน</li>
+              <li>รวม Quick Actions ไว้ในหน้าเดียวเพื่อลดจำนวนขั้นตอน</li>
+              <li>ใช้ Drawer ในการเพิ่มและแก้ไขเมนู เพื่อให้ workflow ต่อเนื่องมากขึ้น</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Key Features</h2>
+            <ul>
+              <li>ออกแบบ Sidebar และ Tab Navigation เพื่อช่วยจัดกลุ่มข้อมูลและลดการ scroll</li>
+              <li>รองรับการแสดงผลทั้งแบบ Grid สำหรับดูภาพเมนู และ List View สำหรับจัดการข้อมูลจำนวนมาก</li>
+              <li>ผู้ใช้สามารถแก้ไขเมนู ลบเมนู เปิด/ปิดการขาย จัดลำดับรายการได้จากหน้าเดียว</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="detail-section">
+          <h2>User Flow Diagram</h2>
+          <div class="detail-crop crop-restaurant-flow" role="img" aria-label="Restaurant menu management user flow diagram"></div>
+        </section>
+
+        <section class="detail-section">
+          <h2>Result</h2>
+          <p>หลังจากปรับโครงสร้างและออกแบบ UX ใหม่ ระบบสามารถจัดการข้อมูลจำนวนมากได้เป็นระเบียบมากขึ้น ผู้ใช้งานสามารถเข้าถึงเมนูและหมวดหมู่ได้เร็วขึ้น รวมถึงลดขั้นตอนในการจัดการเมนูในแต่ละวัน การเพิ่ม Search, Category Navigation และ Flexible View ช่วยให้ระบบรองรับการใช้งานจริงในร้านอาหารที่มีเมนูจำนวนมากได้ดีขึ้น</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Reflection</h2>
+          <ul>
+            <li>เรียนรู้การออกแบบระบบหลังบ้านที่มีข้อมูลจำนวนมาก และเข้าใจความสำคัญของ workflow สำหรับผู้ใช้งานจริงมากขึ้น</li>
+            <li>ความท้าทายหลักคือการจัดการข้อมูลจำนวนมากโดยยังคงทำให้ interface ใช้งานง่ายและไม่ซับซ้อนเกินไป</li>
+            <li>โปรเจกต์นี้ช่วยพัฒนาทักษะด้าน Information Architecture, Dashboard UX และ System Thinking ในการออกแบบผลิตภัณฑ์ที่เน้นประสิทธิภาพในการใช้งานจริง</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-grid">
+      <section class="footer-intro">
+        <a class="brand" href="index.html#home">
+          <span class="brand-mark">N</span>
+          <span>Nattakan</span>
+        </a>
+        <h2>Have A Project In Mind?<br>Let’s Talk.</h2>
+        <p>I’m open to new opportunities and collaborations - feel free to reach out and let’s build something meaningful together.</p>
+        <div class="social-links" aria-label="Social links">
+          <a class="whatsapp" href="tel:+66940481475" aria-label="Call Nattakan">☎</a>
+          <a class="linkedin" href="https://www.linkedin.com" aria-label="LinkedIn">in</a>
+          <a class="mail" href="mailto:nattakan.uoo@gmail.com" aria-label="Email">m</a>
+        </div>
+      </section>
+      <section>
+        <h3>Navigation</h3>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+      </section>
+      <section>
+        <h3>Our address</h3>
+        <p><a href="tel:+66940481475">+66 94 048 1475</a></p>
+        <p><a href="mailto:nattakan.uoo@gmail.com">nattakan.uoo@gmail.com</a></p>
+        <address>97/166 S9 Condominium<br>Soi Pa Mai Uthit, Rattanathibet Road<br>Bang Rak Yai Subdistrict, Bang Bua Thong District<br>Nonthaburi 11110, Thailand</address>
+      </section>
+    </div>
+    <p class="copyright">Copyright 2026 Nattakan Noichalad. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

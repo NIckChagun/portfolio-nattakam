@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self Check-in Kiosk Experience | Nattakan Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html#home" aria-label="Nattakan portfolio home">
+      <span class="brand-mark">N</span>
+      <span>Nattakan</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html#home">Home</a>
+      <a class="active" href="index.html#case-studies">Case Studies</a>
+      <a href="index.html#about">About Me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="detail-main">
+    <article class="detail-hero">
+      <div class="detail-shell">
+        <h1>Self Check-in Kiosk Experience</h1>
+        <p class="detail-lead">โปรเจกต์นี้เป็นการออกแบบ UI สำหรับ Self Check-in Kiosk เพื่อใช้ในพื้นที่องค์กร สำหรับผู้มาติดต่อ ให้สามารถลงทะเบียนด้วยตนเองได้อย่างรวดเร็ว โดยไม่ต้องพึ่งพาพนักงานต้อนรับ ผู้ใช้งานสามารถเสียบบัตรประชาชน / พาสปอร์ต ถ่ายภาพเพื่อยืนยันตัวตน รับรหัส Wi-Fi สำหรับใช้งานภายในพื้นที่ และรับข้อมูลปลายทาง เช่น อาคาร / ชั้น / จุดติดต่อ เป้าหมายหลักคือการลดขั้นตอน manual, ลดเวลารอคิว เพิ่มความเร็ว และช่วยนำทางผู้ใช้งานภายในพื้นที่ได้อย่างชัดเจน</p>
+
+        <div class="detail-figure-grid">
+          <div class="detail-crop crop-kiosk-hero" role="img" aria-label="Self check-in kiosk detail screens"></div>
+          <div class="detail-crop crop-kiosk-hero-2" role="img" aria-label="Self check-in kiosk detail screens"></div>
+        </div>
+
+        <section class="detail-section">
+          <h2>Research</h2>
+          <p>จากการศึกษา flow เดิมและพฤติกรรมผู้ใช้งานพบว่า ผู้ใช้งานจำนวนมากไม่รู้ว่าต้องไปติดต่อที่ไหนต่อ หลังลงทะเบียน ต้องถามพนักงานซ้ำ เพิ่มภาระพนักงานเคาน์เตอร์ ขั้นตอนลงทะเบียนแบบเดิมใช้เวลานาน และเกิดคิวสะสม ผู้ใช้งานมีทั้ง first-time visitor และต่างชาติ นอกจากนี้ยังดู reference จากระบบ self check-in ในโรงพยาบาล / สนามบิน UI ของเครื่อง kiosk ที่มีการใช้งานจริง พบว่า UI ที่ดีจะมี step-by-step ชัดเจน ใช้ icon + visual ช่วยแทนข้อความ มี feedback ตลอดเวลา เช่น loading / success</p>
+        </section>
+
+        <section class="detail-section">
+          <h2>Key Insight</h2>
+          <p>ผู้ใช้งานต้องการความชัดเจนมากที่สุด ทุก interaction ต้องเข้าใจได้ทันทีโดยไม่ต้องคิด การมี feedback เช่น animation / loading / success screen ช่วยลดความกังวล ผู้ใช้มีเวลาจำกัด ระบบต้องเร็วและไม่ซับซ้อน</p>
+        </section>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Problem</h2>
+            <ul>
+              <li>ขั้นตอนลงทะเบียนเดิมใช้เวลานานและมี human error</li>
+              <li>ต้องออกแบบ UI ให้ผู้ใช้งานสามารถลงทะเบียนได้ภายในเวลารวดเร็ว</li>
+              <li>เข้าใจขั้นตอนได้โดยไม่ต้องมีคนช่วยยืนยันตัวตนได้อย่างมั่นใจ</li>
+              <li>ผู้ใช้งานไม่รู้ว่าต้องไปไหนหลัง check-in ทำให้เกิดการถามซ้ำที่พนักงานหน้าเคาน์เตอร์</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Solution</h2>
+            <ul>
+              <li>ออกแบบ UI ที่เน้น step-by-step flow ที่ชัดเจน</li>
+              <li>ใช้ visual + icon ช่วยอธิบายแทนข้อความ</li>
+              <li>รองรับ 2 ภาษา (TH / EN)</li>
+              <li>ใช้ animation และ feedback เพื่อให้ user มั่นใจในแต่ละขั้นตอน</li>
+              <li>หลังลงทะเบียนเสร็จ ระบบจะแสดงหน้าจอสรุป ระบุข้อมูลปลายทางอย่างชัดเจน เช่น อาคาร ชั้น จุดติดต่อ แผนก</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="detail-section">
+          <h2>User Flow Diagram</h2>
+          <div class="detail-crop crop-kiosk-flow" role="img" aria-label="Self check-in kiosk user flow diagram"></div>
+        </section>
+
+        <div class="detail-grid">
+          <section>
+            <h2>Key Features</h2>
+            <ul>
+              <li>Smart ID / Passport Scan อ่านข้อมูลอัตโนมัติ ลดการกรอกเอง</li>
+              <li>Face Capture for Verification ยืนยันตัวตน</li>
+              <li>Step-by-step Flow ชัดเจน</li>
+              <li>Wi-Fi Access Generation รับรหัสใช้งานทันที</li>
+              <li>Destination Guidance Screen แสดงข้อมูลปลายทางหลัง check-in เช่น อาคาร A ชั้น 5 ห้องประชุม 502</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Result</h2>
+            <ul>
+              <li>ลดภาระหน้าที่พนักงานหน้าเคาน์เตอร์</li>
+              <li>ผู้ใช้งานสามารถไปยังจุดหมายได้ทันทีหลัง check-in</li>
+              <li>ประสบการณ์ใช้งานครบ end-to-end มากขึ้น</li>
+              <li>เพิ่ม perception ว่าองค์กรมีระบบที่เป็นมืออาชีพและทันสมัย</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="detail-section">
+          <h2>Reflection</h2>
+          <p>โปรเจกต์นี้ทำให้เข้าใจว่าการออกแบบสำหรับ kiosk ต่างจาก mobile/web เพราะ user ไม่คุ้นเคย UX ที่ดีไม่ใช่แค่สวย แต่ต้องลดความลังเลของผู้ใช้ให้ได้มากที่สุด การสื่อสารผ่าน UI ต้องชัดทันทีโดยไม่ต้องคิด</p>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-grid">
+      <section class="footer-intro">
+        <a class="brand" href="index.html#home">
+          <span class="brand-mark">N</span>
+          <span>Nattakan</span>
+        </a>
+        <h2>Have A Project In Mind?<br>Let’s Talk.</h2>
+        <p>I’m open to new opportunities and collaborations - feel free to reach out and let’s build something meaningful together.</p>
+        <div class="social-links" aria-label="Social links">
+          <a class="whatsapp" href="tel:+66940481475" aria-label="Call Nattakan">☎</a>
+          <a class="linkedin" href="https://www.linkedin.com" aria-label="LinkedIn">in</a>
+          <a class="mail" href="mailto:nattakan.uoo@gmail.com" aria-label="Email">m</a>
+        </div>
+      </section>
+      <section>
+        <h3>Navigation</h3>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+      </section>
+      <section>
+        <h3>Our address</h3>
+        <p><a href="tel:+66940481475">+66 94 048 1475</a></p>
+        <p><a href="mailto:nattakan.uoo@gmail.com">nattakan.uoo@gmail.com</a></p>
+        <address>97/166 S9 Condominium<br>Soi Pa Mai Uthit, Rattanathibet Road<br>Bang Rak Yai Subdistrict, Bang Bua Thong District<br>Nonthaburi 11110, Thailand</address>
+      </section>
+    </div>
+    <p class="copyright">Copyright 2026 Nattakan Noichalad. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
