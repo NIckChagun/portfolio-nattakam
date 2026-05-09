@@ -1,3 +1,5 @@
+@import url("https://db.onlinewebfonts.com/c/69fc4f0f2a8869feeec71379c2cf824c?family=Sukhumvit+Set");
+
 :root {
   --ink: #252525;
   --muted: #8793a6;
@@ -22,7 +24,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Sukhumvit Set", "Inter", Arial, sans-serif;
   background: #fff;
 }
 
@@ -580,6 +582,7 @@ a {
 }
 
 .detail-section p,
+.detail-grid p,
 .detail-section li,
 .detail-grid li {
   color: #777;
@@ -753,6 +756,7 @@ a {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.58;
+  text-indent: 30px;
 }
 
 .carousel-dots {
