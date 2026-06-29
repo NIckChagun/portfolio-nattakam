@@ -669,6 +669,15 @@ a {
   background-position: center 19%;
   box-shadow: none;
 }
+.crop-kiosk-insight {
+  min-height: 540px;
+  margin: 32px 0 44px;
+  background-image: url("assets/images/krios_detail_3.png");
+  background-color: #ececec;
+  background-size: contain;
+  background-position: center;
+  box-shadow: none;
+}
 
 .crop-restaurant-hero {
   min-height: 600px;
